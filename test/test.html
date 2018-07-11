@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>test</title>
+<link href="./css/bootstrap.css" rel="stylesheet">
+<link href="./css/test.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body style="background-color:#ECEBEB">
+<nav class="navbar navbar-default" style="background-color:#FFFFFF">
+  <div class="container-fluid"> 
+    <div class="navbar-header header1">
+      <a class="navbar-brand" href="#"><img src="./img/asmex.png" class="brand1"/></a></div>
+      <p class="p2">Welcome Back, User<br/>My Cart</p>
+      <ul class="nav navbar-nav navbar-right" align="center">
+        <li class="nav1"><a href="#"><i class="fa fa-user-o"></i><br/>My Account</a></li>
+        <li class="nav1"><a href="#"><i class="fa fa-sign-out"></i><br/>Log out</a></li>
+        <li class="nav1"><a href="#"><i class="fa fa-file"></i><br/>My Results</a></li>
+        <li class="nav1"><a href="#"><i class="fa fa-bell"></i><br/>Concierge</a></li>
+        <li class="nav1"><a href="#"><i class="fa fa-envelope"></i><br/>Mail</a></li>
+        <li class="nav1"><a href="#"><i class="fa fa-shopping-cart"></i><br/>Store</a></li>
+        <li class="nav1"><a href="#"><i class="fa fa-info"></i><br/>Tutorials</a></li>
+        <li class="nav1"><a href="#"><i class="fa fa-archive"></i><br/>Style Clinic</a></li>
+      </ul>
+  </div>
+</nav>
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <div class="row" style="height:100%">
+  	<div class="col-sm-5">
+  	<img src="./img/1.png" style="margin-left:30px" class="img-responsive">
+  	</div>
+  	<div class="col-sm-7 text-center">
+ 	<p style="margin-top:100px">Get the latest womens fashion online at boohoo.com. With 100s of new styles every day from dresses, onesies, heels & coats, shop womens clothing now!</p>
+    <br/>
+    <button class="btn btn-success">Buy it now</button>
+  	</div>
+   </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-2 text-center tile"><a href="#" onClick="popup()"><img src="./img/1.png" class="img1"><br/><br/><p style="color:pink">boohoo</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
+    <div class="col-sm-2 text-center tile"><a href="#"><img src="./img/2.png" class="img1"><br/><br/><p class="p1">Kate Spade</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
+    <div class="col-sm-2 text-center tile"><a href="#"><img src="./img/3.png" class="img1"><br/><br/><p class="p1">N°21</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
+    <div class="col-sm-2 text-center tile"><a href="#"><img src="./img/4.png" class="img1"><br/><br/><p class="p1">Jimmy Choo</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
+    <div class="col-sm-2 text-center tile"><a href="#"><img src="./img/5.png" class="img1"><br/><br/><p class="p1">Superga</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
+    <div class="col-sm-2 text-center tile"><a href="#"><img src="./img/1.png" class="img1"><br/><br/><p class="p1">boohoo</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
+    <div class="col-sm-2 text-center tile"><a href="#"><img src="./img/2.png" class="img1"><br/><br/><p class="p1">Kate Spade</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
+    <div class="col-sm-2 text-center tile"><a href="#"><img src="./img/3.png" class="img1"><br/><br/><p class="p1">N°21</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
+    <div class="col-sm-2 text-center tile"><a href="#"><img src="./img/4.png" class="img1"><br/><br/><p class="p1">Jimmy Choo</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
+    <div class="col-sm-2 text-center tile"><a href="#"><img src="./img/5.png" class="img1"><br/><br/><p class="p1">Superga</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
+  </div>
+</div>
+
+<script src="./js/jquery-1.11.2.min.js"></script>
+<script src="./js/bootstrap.js"></script>
+
+<script>
+var modal = document.getElementById("myModal");
+function popup(){
+	modal.style.display = "block";
+	}
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() { 
+    modal.style.display = "none";
+}
+</script>
+
+</body>
+</html>
