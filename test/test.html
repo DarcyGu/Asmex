@@ -31,7 +31,7 @@
   <span class="close">&times;</span>
   <div class="row" style="height:100%">
   	<div class="col-sm-5">
-  	<img src="./img/1.png" style="margin-left:30px" class="img-responsive">
+  	<img id="img1" style="margin-left:30px" class="img-responsive">
   	</div>
   	<div class="col-sm-7 text-center">
  	<p style="margin-top:100px">Get the latest womens fashion online at boohoo.com. With 100s of new styles every day from dresses, onesies, heels & coats, shop womens clothing now!</p>
@@ -42,16 +42,16 @@
 </div>
 <div class="container">
   <div class="row">
-    <div class="col-sm-2 text-center tile"><a href="#" onClick="popup()"><img src="./img/1.png" class="img1"><br/><br/><p style="color:pink">boohoo</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
-    <div class="col-sm-2 text-center tile"><a href="#"><img src="./img/2.png" class="img1"><br/><br/><p class="p1">Kate Spade</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
-    <div class="col-sm-2 text-center tile"><a href="#"><img src="./img/3.png" class="img1"><br/><br/><p class="p1">N°21</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
-    <div class="col-sm-2 text-center tile"><a href="#"><img src="./img/4.png" class="img1"><br/><br/><p class="p1">Jimmy Choo</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
-    <div class="col-sm-2 text-center tile"><a href="#"><img src="./img/5.png" class="img1"><br/><br/><p class="p1">Superga</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
-    <div class="col-sm-2 text-center tile"><a href="#"><img src="./img/1.png" class="img1"><br/><br/><p class="p1">boohoo</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
-    <div class="col-sm-2 text-center tile"><a href="#"><img src="./img/2.png" class="img1"><br/><br/><p class="p1">Kate Spade</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
-    <div class="col-sm-2 text-center tile"><a href="#"><img src="./img/3.png" class="img1"><br/><br/><p class="p1">N°21</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
-    <div class="col-sm-2 text-center tile"><a href="#"><img src="./img/4.png" class="img1"><br/><br/><p class="p1">Jimmy Choo</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
-    <div class="col-sm-2 text-center tile"><a href="#"><img src="./img/5.png" class="img1"><br/><br/><p class="p1">Superga</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
+    <div class="col-sm-2 text-center tile"><a href="#" onClick="popup(1)"><img src="./img/1.png" class="img1"><br/><br/><p style="color:pink">boohoo</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
+    <div class="col-sm-2 text-center tile"><a href="#" onClick="popup(2)"><img src="./img/2.png" class="img1"><br/><br/><p class="p1">Kate Spade</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
+    <div class="col-sm-2 text-center tile"><a href="#" onClick="popup(3)"><img src="./img/3.png" class="img1"><br/><br/><p class="p1">N°21</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
+    <div class="col-sm-2 text-center tile"><a href="#" onClick="popup(4)"><img src="./img/4.png" class="img1"><br/><br/><p class="p1">Jimmy Choo</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
+    <div class="col-sm-2 text-center tile"><a href="#" onClick="popup(5)"><img src="./img/5.png" class="img1"><br/><br/><p class="p1">Superga</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
+    <div class="col-sm-2 text-center tile"><a href="#" onClick="popup(1)"><img src="./img/1.png" class="img1"><br/><br/><p class="p1">boohoo</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
+    <div class="col-sm-2 text-center tile"><a href="#" onClick="popup(2)"><img src="./img/2.png" class="img1"><br/><br/><p class="p1">Kate Spade</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
+    <div class="col-sm-2 text-center tile"><a href="#" onClick="popup(3)"><img src="./img/3.png" class="img1"><br/><br/><p class="p1">N°21</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
+    <div class="col-sm-2 text-center tile"><a href="#" onClick="popup(4)"><img src="./img/4.png" class="img1"><br/><br/><p class="p1">Jimmy Choo</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
+    <div class="col-sm-2 text-center tile"><a href="#" onClick="popup(5)"><img src="./img/5.png" class="img1"><br/><br/><p class="p1">Superga</p></a><br/><i class="fa fa-heart-o"></i> $57<br/><br/></div>
   </div>
 </div>
 
@@ -60,9 +60,11 @@
 
 <script>
 var modal = document.getElementById("myModal");
-function popup(){
+var modalImg = document.getElementById("img1");
+function popup(n){
 	modal.style.display = "block";
-	}
+	modalImg.src = "./img/"+n+".png";
+}
 var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
     modal.style.display = "none";
