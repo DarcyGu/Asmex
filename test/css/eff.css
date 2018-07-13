@@ -1,0 +1,30 @@
+@charset "UTF-8";
+.am-slider-carousel li {
+  margin-right: 5px;
+}
+.fa-plus{
+  color:black;
+}
+.fa-minus{
+  color:black;
+}
+.p1{
+	color:white;
+	margin-top:10px;
+}
+.nav1{
+	background-color:white;
+	border:hidden;
+}
+.nav2{
+	background-color:black;
+	border:hidden;
+}
+.li1{
+	margin-right:100px;
+	margin-top:25px;
+}
+.li2{
+	margin-right:400px;
+	margin-top:25px;
+}
